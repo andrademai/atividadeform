@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+  <title> Atividade 4 - Formulário </title>
+  <meta charset="utf-8">
+
+</head>
+
+<body>
+
+  <h1 align="center">
+    <font face="Helvética" color="purple"> Hospedagem
+      <img src="img/pata.jpg" align="center" width="90" height="90" />
+    </font>
+  </h1>
+  <h1 align="center">
+    <font face="Helvética" color="purple"> Checklist </font>
+  </h1>
+
+
+  <table border="0" width="300" align="center" background="img/fundoimg.jpg">
+    <tr>
+      <td>
+        <fieldset>
+          
+          <legend align=""> <img src="img/patalegenda.png" width="20" height="20"/> <strong> Dados Pessoais </strong></legend>
+          
+
+          <form action="enviar.php" method="post" name="cadastro">
+            
+            <table border="0" cellpadding="10" bgcolor="">
+              <tr>
+    
+             
+
+                <td><label><strong> Nome do Pet </strong></label></td>
+                <td><input type="text" id="nome" name="nome" size="50" maxlength=""
+                    placeholder="Digite o nome do seu pet" required /></td>
+                
+              
+
+              <td><label><strong> Raça </strong></label></td>
+              <td><input type="text" id="nome" name="nome" size="40" maxlength="" placeholder="Informe a raça"
+                  required /></td>
+          
+    
+
+
+    
+      <td><label><strong> Data Nascimento do Pet </strong></label></td>
+      <td><input type="date" id="data_nasc" name="data_nasc" min="2022-07-25" max="2005-01-01" required /></td>
+    </tr>
+
+    <tr>
+      <td><label><strong> Espécie </strong></label></td>
+      <td><label><input type="radio" id="especie" name="especie" value="C" required />
+          Canino </label>
+
+        <label><input type="radio" id="especie" name="especie" value="F" required />
+          Felino </label>
+      </td>
+    
+
+    
+               
+      <td><label><strong> Nome do(a) Tutor(a) </strong> </label></td>
+      <td><input type="text" id="nome" name="nome" size="40" maxlength=""
+          placeholder="Digite seu nome" required /></td>
+    
+
+    
+      <td><label><strong> CPF </strong></label></td>
+      <td><input type="text" id="campo_cpf" name="campo_cpf" placeholder="Apenas números" required /></td>
+    
+
+
+    <tr>
+  <td><label><strong> Endereço </strong></label></td>
+  <td><input type="text" id="endereço" name="endereço" size="40" maxlength="" placeholder="Digite seu endereço" required /></td>
+
+
+
+  <td><label><strong> Quantidade de Animais </strong></label></td>
+  <td><input type="text" id="quantidade" name="quantidade" size="40" maxlength="" placeholder="Campo Desabilitado" disabled /></td>
+</tr>
+
+
+  <td><label><strong> Telefone do(a) Tutor(a) </strong></label></td>
+  <td><input type="tel" id="telefone" name="telefone" size="40" maxlength="" placeholder="Digite seu telefone" required/></td> 
+ 
+
+    
+      <td><label><strong> Sexo </strong></label></td>
+      <td><label><input type="radio" id="sexo" name="sexo" value="M" required />
+          Macho </label>
+
+        <label><input type="radio" id="sexo" name="sexo" value="F" required />
+          Fêmea </label>
+      </td>
+    
+
+    
+      <td><label><strong> Seu pet é castrado ? </strong></label></td>
+      <td><label><input type="radio" id="escolha" name="escolha" value="S" required />
+          Sim </label>
+
+        <label><input type="radio" id="escolha" name="escolha" value="N" required />
+          Não </label>
+      </td>
+    </tr>
+   
+    <tr>
+      
+      <td><label><strong> Objetos entregues com o animal </strong></label></td>
+      
+      <td><label><input type="checkbox" id="coleira" name="coleira" value="coleira" />
+          Coleira </label> <br />
+
+        <label><input type="checkbox" id="guia" name="guia" value="guia" />
+          Guia </label> <br />
+
+        <label><input type="checkbox" id="cama" name="cama" value="cama" />
+          Cama </label> <br />
+
+        <label><input type="checkbox" id="coberta" name="coberta" value="coberta" />
+          Coberta </label> <br />
+
+        <label><input type="checkbox" id="Potes" name="Potes" value="Potes" />
+          Potes </label> <br/>
+
+          <label><input type="checkbox" id="Brinquedos" name="Brinquedos" value="Brinquedos" />
+            Brinquedos </label>
+      </td>
+    
+   
+      <td><label><strong> Observações </strong> </label></td>
+      <td><textarea id="observaçoes" name="observaçoes" cols="40" rows="10" maxlength="240" required> </textarea></td>
+
+    </tr>
+  </table>
+
+    <fieldset>
+      <legend> <img src="img/patalegenda.png" width="20" height="20"/> <strong> Anamnese </strong></legend>
+
+
+      <table cellpadding="8" border="2">
+
+        <tr>
+      
+          <td><label><input type="checkbox" id="Doenças Preexistentes" name="Doenças Preexistentes" value="Doenças Preexistentes" />
+              Doenças Preexistentes </label> <input type="text" id="observaçoes" name="observaçoes" size="50"/><br/>
+    
+            <label><input type="checkbox" id="Alergias" name="Alergias" value="Alergias" />
+              Alergias </label> <input type="text" id="observaçoes" name="observaçoes" size="50"/><br />
+    
+            <label><input type="checkbox" id="Vacinas" name="Vacinas" value="Vacinas" />
+              Vacinas </label> <br />
+    
+            <label><input type="checkbox" id="Antipulgas" name="Antipulgas" value="Antipulgas" />
+              Antipulgas </label> <br />
+    
+            <label><input type="checkbox" id="Cuidados Especiais" name="Cuidados Especiais" value="Cuidados Especiais" />
+              Cuidados Especiais </label>  <input type="text" id="observaçoes" name="observaçoes" size="50"/><br/>
+    
+              
+          </td>           
+                            
+       </tr>
+
+<br/>
+
+      </table>
+
+      <fieldset>
+        <legend> <img src="img/patalegenda.png" width="20" height="20"/> <strong> Alimentação </strong></legend>
+  
+  
+        <table cellpadding="8" border="2">
+
+          <tr>
+      
+            <td><label><input type="checkbox" id="Ração" name="Ração" value="Ração" />
+                Ração </label> <input type="text" id="observaçoes" name="observaçoes" size="40"/><br/>
+      
+              <label><input type="checkbox" id="AN" name="AN" value="AN" />
+                AN </label> <input type="text" id="observaçoes" name="observaçoes" size="40"/><br />
+                
+            </td>           
+                              
+         </tr>
+
+        </table>
+
+        <fieldset>
+          <legend> <img src="img/patalegenda.png" width="20" height="20"/>
+            <strong> Serviços Adicionais </strong></legend>
+    
+    
+          <table cellpadding="8" border="1">
+  
+            <tr>
+
+              <td><label><strong>Banho</strong> </label></td>
+      <td><select id="banho" name="banho" required>
+
+          <option value="" selected="selected" required> --Selecione-- </option>
+          <optgroup label="Animais Porte Pequeno">
+            <option value="PP">R$ 20.00</option>
+            
+          </optgroup>
+
+          <optgroup label="Animais Porte Médio">
+            <option value="PM">R$ 30.00</option>
+            
+          </optgroup>
+
+
+          <optgroup label="Animais Porte Grande">
+            <option value="PG">R$ 45.00</option>
+            
+          </optgroup>
+
+
+        </select></td>
+
+
+            </tr>
+
+            <tr>
+
+              <td><label><strong>Táxi Dog</strong> </label></td>
+      <td><select id="taxi" name="taxi" required>
+
+          <option value="" selected="selected" required> --Selecione-- </option>
+          <optgroup label="Até 5 km distância">
+            <option value="distancia">R$ 10.00</option>
+            
+          </optgroup>
+
+          <optgroup label="Até 25 km distância">
+            <option value="distancia">R$ 20.00</option>
+            
+          </optgroup>
+
+
+          <optgroup label="Acima de 25 km distância">
+            <option value="distancia">R$ 35.00</option>
+            
+          </optgroup>
+
+
+        </select></td>
+
+
+          </tr>
+          </table>        
+        </select></td>
+
+        
+    
+    <tr>
+      <th colspan="2">
+        
+        <input type="reset" id="limpar" name="limpar" value="LIMPAR" />
+
+        <input type="submit" id="enviar" name="enviar" value="ENVIAR" /> 
+        <button type="submit" id="send" name="send">
+          <img src="img/enviar.jpg" width="30" height="30"/>
+
+
+          
+          
+        </button>
+      </th>
+    </tr>
+  </table>
+
+  
+
+  </form>
+  </fieldset>
+  </td>
+  </tr>
+  </table>
+</body>
+
+
+
+
+</html>
